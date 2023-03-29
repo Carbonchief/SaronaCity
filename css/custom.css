@@ -1,0 +1,27 @@
+.invertImage {
+    -webkit-filter: invert(100%); /* Safari/Chrome */
+    filter: invert(100%);
+}
+
+.google-maps {
+    position: relative;
+    padding-bottom: 75%; 
+    height: 500px;
+    overflow: hidden;
+  }
+
+  .google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .gallery-item {
+    padding: 10px;
+  }
+  .gallery-item img {
+    max-width: 100%;
+    height: auto;
+  }

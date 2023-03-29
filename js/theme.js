@@ -9878,7 +9878,7 @@ if( $('[data-copy-to-clipboard]').length ) {
 				var $hamburguerMenuBtn = $('.hamburguer-btn:not(.side-panel-toggle)'),
 					$hamburguerSideHeader = $('#header.side-header, #header.side-header-overlay-full-screen');
 				
-				$hamburguerMenuBtn.on('click', function(){
+				$hamburguerMenuBtn.on('click', function(){					
 					if($(this).attr('data-set-active') != 'false') {
 						$(this).toggleClass('active');
 					}
