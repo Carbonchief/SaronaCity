@@ -3,8 +3,9 @@ $(function () {
 });
 
 $(function () {
-    $("#header-placeholder").load("header.html?v=1");   
+    $("#header-placeholder").load("header.html?v=1");
 });
+
 
 function submitForm() {
     // Get form elements
@@ -14,7 +15,7 @@ function submitForm() {
 
     // Send data via AJAX
     var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
+    xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             document.getElementById("response").innerHTML = this.responseText;
         }
