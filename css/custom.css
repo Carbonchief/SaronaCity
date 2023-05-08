@@ -1,3 +1,34 @@
+@font-face {
+  font-family: Opens Sans Light;
+  src: url('fonts/OpenSauceSans-Light.ttf');
+}
+
+.OpensSans {
+  font-family: Opens Sans Light !important;
+}
+
+@font-face {
+  font-family: Anton;
+  src: url('fonts/Anton-Regular.ttf');
+}
+
+.Anton {
+  font-family: Anton !important;
+  letter-spacing: 0.5px;
+}
+
+
+@font-face {
+  font-family: XM Yekan Regular;
+  src: url('fonts/XM\ Yekan\ Regular.ttf');
+}
+
+.XMYekan {
+  font-family: XM Yekan Regular !important;
+}
+
+
+
 .invertImage {
   -webkit-filter: invert(100%);
   /* Safari/Chrome */
@@ -28,11 +59,67 @@
   height: auto;
 }
 
-.btn-primary {
-  background-color: #814287 !important;
-  border-color: #814287 !important;
+
+
+hr {
+  position: relative;
+  border: none;
+  height: 1px;
+  background: black;
 }
 
-#header .header-nav.header-nav-links nav>ul:not(:hover)>li>a.active {
-  color: #814287;
+section.section {
+  background: #e6e5e5;
+  border-top: 5px solid #e6e5e5;
+  margin: 0px 0;
+  padding: 10px 0;
+}
+
+.btn-dark {
+  font-family: 'Heebo', sans-serif;
+  letter-spacing: 1px;
+}
+
+.nav-pills>li.active>a,
+.nav-pills .nav-link.active {
+  background-color: transparent;
+  background: transparent !important;
+  border-bottom: 3px solid #CCC;
+  color: black;
+}
+
+ul.nav-pills>li>a.active:hover,
+ul.nav-pills>li>a.active:focus {
+  color: black;
+  background-color: transparent;
+}
+
+
+.custom-btn-style-1 {
+  position: relative;
+  border-radius: 0;
+  left: 5px;
+}
+
+.custom-btn-style-1:before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+  border: 1px solid #CCC;
+  transition: ease all 300ms;
+}
+
+.custom-btn-style-1:hover:before {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.custom-btn-style-1.custom-btn-style-1-right {
+  left: auto;
+  right: 5px;
 }
