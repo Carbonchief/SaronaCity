@@ -124,19 +124,23 @@ ul.nav-pills>li>a.active:focus {
     right: 5px;
 }
 
-html #header .header-logo.custom-header-logo:before {
-    content: '';
-    position: absolute;
-    bottom: -87px;
-    left: 40px;
-    width: 130px;
-    height: 350px;
-    background-color: #383228;
-    opacity: 1;
-    visibility: visible;
-    transform: rotate(45deg);
-    transition: ease opacity 300ms, ease transform 300ms;
+@media screen and (min-width: 769px) {
+    html #header .header-logo.custom-header-logo:before {
+        content: '';
+        position: absolute;
+        bottom: -87px;
+        left: 40px;
+        width: 130px;
+        height: 350px;
+        background-color: #383228;
+        opacity: 1;
+        visibility: visible;
+        transform: rotate(45deg);
+        transition: ease opacity 300ms, ease transform 300ms;
+    }
 }
+
+
 
 .PageThickLine {
     display: flex;
@@ -190,7 +194,6 @@ html #header .header-logo.custom-header-logo:before {
     margin: -0.30em -50em;
     transform: scale(0.7);
     -webkit-transform: scale(0.7);
-    border: 2px rgba(255, 255, 255, 0.7) dashed;
 }
 
 

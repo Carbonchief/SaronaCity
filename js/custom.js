@@ -6,11 +6,11 @@ $(function () {
     $("#header-placeholder").load("header.html?v=1");
 });
 
-window.onload = (event) => {
-    var path = window.location.pathname;
-    var page = path.split("/").pop().trim();
-    $('ul#mainNav a[href="' + page + '"]').addClass('active');
-};
+// window.onload = (event) => {
+//     var path = window.location.pathname;
+//     var page = path.split("/").pop().trim();
+//     $('ul#mainNav a[href="' + page + '"]').addClass('active');
+// };
 
 
 function submitForm() {
