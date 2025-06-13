@@ -57,6 +57,7 @@ $('a.Botclass').click(function (e) {
     // Special stuff to do when this link is clicked...
     $("#liGaborone").toggleClass("d-none");
     $("#liGaborone1").addClass("d-none");
+    $("#liGaborone2").addClass("d-none");
     $("html, body").animate({ scrollTop: $(document).height() }, 1000);
     // Cancel the default action
     e.preventDefault();
@@ -65,6 +66,7 @@ $('a.Botclass').click(function (e) {
 $('a.someclass3').click(function (e) {
     // Special stuff to do when this link is clicked...
     $("#liGaborone1").toggleClass("d-none");
+    $("#liGaborone2").toggleClass("d-none");
     $("html, body").animate({ scrollTop: $(document).height() }, 1000);
     // Cancel the default action
     e.preventDefault();
