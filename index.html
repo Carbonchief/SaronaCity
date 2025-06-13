@@ -2,12 +2,22 @@
 <html>
 
 <head>
+	<!-- Google Tag Manager -->
+	<script>(function (w, d, s, l, i) {
+			w[l] = w[l] || []; w[l].push({
+				'gtm.start':
+					new Date().getTime(), event: 'gtm.js'
+			}); var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+					'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-W6SHNWZG');</script>
+	<!-- End Google Tag Manager -->
 
 	<!-- Basic -->
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-	<title>Sarona City</title>
+	<title>Eco City</title>
 
 	<meta name="keywords" content="HTML5 Template" />
 	<meta name="description" content="Porto - Responsive HTML5 Template">
@@ -54,7 +64,7 @@
 	<link id="skinCSS" rel="stylesheet" href="css/skins/skin-construction.css">
 
 	<!-- Theme Custom CSS -->
-	<link rel="stylesheet" href="css/custom.css?v=2">
+	<link rel="stylesheet" href="css/custom.css?v=4">
 
 	<!-- Head Libs -->
 	<script src="vendor/modernizr/modernizr.min.js"></script>
@@ -62,7 +72,25 @@
 </head>
 
 <body data-plugin-scroll-spy data-plugin-options="{'target': '#sidebar'}">
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W6SHNWZG" height="0" width="0"
+			style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
 
+	 <!-- Bootstrap Modal -->
+	 <div class="modal fade" id="pollModal" tabindex="-1" aria-labelledby="pollModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="pollModalLabel">Vote in Our Poll</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScXVqdEMqMZA8b8KnOPWz2awuYMSEoBa4othw7DAOjVIcmXXg/viewform?embedded=true"  width="100%" height="600px" frameborder="0">Loading…</iframe>
+                </div>
+            </div>
+        </div>
+    </div>
 	<div class="body">
 		<header id="header" class="header-transparent header-semi-transparent header-semi-transparent-light"
 			data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyStartAt': 1, 'stickySetTop': '1'}">
@@ -81,7 +109,7 @@
 							<div class="background-image-wrapper position-absolute top-0 left-0 right-0 bottom-0"
 								data-appear-animation="kenBurnsToRight" data-appear-animation-duration="30s"
 								data-plugin-options="{'minWindowWidth': 0}" data-carousel-onchange-show
-								style="background-image: url(img/HomeBackground.jpg); background-size: cover; background-position: center;">
+								style="background-image: url(img/Background.jpg); background-size: cover; background-position: center;">
 							</div>
 
 							<div id="revolutionSlider" class="slider rev_slider" data-version="5.4.8"
@@ -121,13 +149,13 @@
 										<h1 class="tp-caption font-weight-extra-bold text-color-light" data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"sX:1.5;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},
 											{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
 											data-x="center" data-y="center" data-fontsize="['95','95','95','150']"
-											data-lineheight="['105','105','105','155']">SARONA CITY</h1>
+											data-lineheight="['105','105','105','155']">ECO CITY</h1>
 										<div class="tp-caption font-weight-light text-color-light ws-normal text-center"
 											data-frames='[{"from":"opacity:0;","speed":300,"to":"o:1;","delay":2300,"split":"chars","splitdelay":0.05,"ease":"Power2.easeInOut"},
 											{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
 											data-x="center" data-y="center" data-voffset="['110','110','110','200']"
 											data-width="['325','325','325','550']" data-fontsize="['18','18','18','40']"
-											data-lineheight="['26','26','26','45']">...a city within the City
+											data-lineheight="['26','26','26','45']">Where Opulence & Nature Embrace
 										</div>
 									</li>
 								</ul>
@@ -143,9 +171,6 @@
 			<div class="container py-4 my-3">
 				<div class="row text-center ">
 					<div class="col-md-10 mx-md-auto">
-						<!-- <img src="img/logos/Sarona-City-Logo-White.png"
-							class="invertImage appear-animation animated fadeInUpShorter appear-animation-visible"
-							ata-appear-animation="fadeInUpShorter" style="animation-delay: 100ms;" /><br><br> -->
 						<h1 class="line-height-1 text-uppercase Anton" style="z-index: 99;">
 							About
 						</h1>
@@ -153,19 +178,33 @@
 						<p class="lead text-4 font-weight-normal appear-animation animated fadeInUpShorter appear-animation-visible"
 							data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200"
 							style="animation-delay: 200ms;">
-							The home you have dreamt of is now a reality with the exciting development of Sarona City, a
-							city nestled between Limpopo Drive and Segoditshane Way in Tsholofelo East, Gaborone. Sarona
-							City gives a quality of life in a unique manner of peace and ease of living including ease
-							of access to lifestyle necessities and free-flowing open landscaping in the development.
+							Eco City is an innovative residential and retail development designed to offer
+							contemporary, eco-friendly living in the heart of Gaborone. Blending luxury with
+							nature, Eco City provides high-quality, affordable housing and commercial
+							spaces that reflect its commitment to sustainability and community.
 						</p>
 						<p class="lead text-4 font-weight-normal appear-animation animated fadeInUpShorter appear-animation-visible"
 							data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200"
 							style="animation-delay: 200ms;">
-							Promoting a community of fine living and comfort, Sarona City is to be created and intended
-							for those welcoming a lifestyle full of energy and excitement with all required amenities
-							within a 2-kilometer radius. Pick 'n Pay Hyper, fashion stores, ATM machines, Engen service
-							station, preschool and most importantly luxurious accommodation, all within walking
-							distance. Surrounding the whole community are lovely landscaped walkways.
+							Nestled near Old Naledi, this development is set to empower the surrounding
+							community. Residents and visitors will enjoy access to a 3815 sqm mall, offering
+							a range of retail outlets, as well as a filling station, all designed with convenience
+							and luxury in mind.
+
+						</p>
+						<p class="lead text-4 font-weight-normal appear-animation animated fadeInUpShorter appear-animation-visible"
+							data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200"
+							style="animation-delay: 200ms;">
+							Our sophisticated sanctuary combines opulence and practicality, offering serene
+							green spaces where residents can gather, relax, and enjoy a harmonious blend of
+							luxury living and nature.
+
+						</p>
+						<p class="lead text-4 font-weight-normal appear-animation animated fadeInUpShorter appear-animation-visible"
+							data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200"
+							style="animation-delay: 200ms;">
+							Whether you are looking for a dream home, a strategic investment, or a place to
+							connect with nature, <br><strong> Eco City is where opulence and nature embrace.</strong>
 						</p>
 					</div>
 				</div>
@@ -181,7 +220,7 @@
 									<p class="mt-1 pt-1 text-dark">The home that you have dreamt of in now a
 										reality
 										with the
-										development of Sarona
+										development of Eco
 										City.</p>
 								</div>
 							</div>
@@ -203,7 +242,7 @@
 			</section>
 			<section class="mt-3 pt-3 text-center">
 				<h1 class="line-height-1 text-6 text-sm-8 text-lg-12 text-uppercase Anton" style="z-index: 99;">
-					Developments Within Sarona City
+					Developments Within Eco City
 				</h1>
 
 			</section>
@@ -217,18 +256,17 @@
 
 							<div class="row">
 								<div class="col-12">
-									<h2 class="p-0 m-0 text-center text-md-start">The Habitat Sigma</h2>
-									<h2 class="p-0 m-0 text-center text-md-start">Townhouses</h2>
+									<h2 class="p-0 m-0 text-center text-md-start"><strong>Nare Estate</strong> - Individual Plots</h2>
 									<hr>
-									<!-- <h4 class="font-weight-bold pb-1 mb-1">FROM: P 2 399 000, 00</h4> -->
-									<p class="text-dark">Nestled along the boundary of Sarona City and designed to be
+									<h4 class="font-weight-bold pb-1 mb-1">FROM: P 675,000.00 (VAT exclusive)</h4>
+									<!-- <p class="text-dark">Nestled along the boundary of Sarona City and designed to be
 										lived in, designed to be enjoyed, The Habitat Sigma comprises eighteen (18)
-										expertly designed luxury townhouses of double and triple volume.</p>
+										expertly designed luxury townhouses of double and triple volume.</p> -->
 
 								</div>
 								<div class="col-12 text-center mt-3 mb-3 ">
-									<h4 class="font-weight-bold pb-1 mb-3">"...first of its kind in Gaborone"</h4>
-									<a href="TheHabitatSigma.html"
+									<h4 class="font-weight-bold pb-1 mb-3">"500-850 sqm"</h4>
+									<a href="downloads/Nare Brochure.pdf" target="_blank"
 										class="btn btn-dark font-weight-semibold rounded-0 text-2 btn-px-5 btn-py-2 custom-btn-style-1">CLICK
 										FOR MORE</a>
 								</div>
@@ -236,8 +274,7 @@
 						</div>
 						<div class="col-lg-6">
 							<div class="testimonial-author pb-5">
-								<img src="img/projects/Sigma/HabitatSigma/Kitchen Render 02 - Day.png"
-									class="img-fluid " alt="">
+								<img src="img/RIC ECOCITY.jpg" class="img-fluid " alt="">
 							</div>
 
 						</div>
@@ -246,132 +283,6 @@
 
 
 
-			</section>
-			<section class=" section appear-animation" data-appear-animation="fadeInUpShorter"
-				data-appear-animation-delay="200">
-				<div class="container mt-0 pt-0">
-					<div class="row pt-3">
-						<div class="col-12 text-center mb-3">
-							<img src="img/dots.png" width="50px" class="text-center img-fluid">
-						</div>
-						<div class="col-lg-6">
-							<div class="testimonial-author">
-								<img src="img/generic/HabitatKappa.png" class="img-fluid " alt="">
-							</div>
-
-						</div>
-						<div class="col-lg-6 pb-5">
-							<div class="row">
-
-								<div class="col-12">
-									<h2 class="p-0 m-0 text-center text-md-start">The Habitat Kappa</h2>
-									<h2 class="p-0 m-0 text-center text-md-start">Apartments</h2>
-									<hr>
-									<h4 class="font-weight-bold pb-1 mb-1">FROM: P 420 368, 42</h4>
-									<p class="text-dark">The Habitat Kappa Apartments is where luxury and<br>
-										convenience converge.</p>
-									<p class="text-dark">This development is within close proximity to Sarona
-										City<br>
-										Mall, the Habisicus Pre-Shool, and Botlhale International<br>
-										School.</p>
-
-									<h4 class="text-lg-center font-weight-bold text-uppercase">Now Selling Phase
-										01 & 02</h3>
-								</div>
-								<div class="col-12 text-center mt-3">
-									<a href="https://thehabitatkappa.co.bw/"
-										class="btn btn-dark font-weight-semibold rounded-0 text-2 btn-px-5 btn-py-2 custom-btn-style-1"
-										target="_blank">CLICK FOR MORE</a>
-								</div>
-							</div>
-						</div>
-
-					</div>
-			</section>
-			<section class=" appear-animation" data-appear-animation="fadeInUpShorter"
-				data-appear-animation-delay="200">
-				<div class="container">
-					<div class="row">
-						<div class="col-12 text-center mb-4">
-							<img src="img/dots.png" width="50px" class="text-center img-fluid">
-						</div>
-						<div class="col-lg-6">
-
-							<div class="row">
-								<div class="col-12">
-									<h2 class="p-0 m-0 text-center text-md-start">The Habitat Alpha</h2>
-									<h2 class="p-0 m-0 text-center text-md-start">Apartments</h2>
-									<hr>
-									<h4 class="font-weight-bold pb-1 mb-1">SOLD OUT</h4>
-									<p class="text-dark">The units feature an open plan living style with sleek
-										fittings.<br>
-										All units on the ground floor lead to a private backyard<br>
-										garden and the others to a balcony. <br><br>These units are ready for
-										occupation.</p>
-
-
-								</div>
-								<div class="col-12 text-center mt-3 mb-3 ">
-									<a href="TheHabitatAlpha.html"
-										class="btn btn-dark font-weight-semibold rounded-0 text-2 btn-px-5 btn-py-2 custom-btn-style-1">CLICK
-										FOR MORE</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-6">
-							<div class="testimonial-author pb-5">
-								<img src="img/generic/3-Beds-2-Baths-Living-room-kitchen.png" class="img-fluid " alt="">
-							</div>
-
-						</div>
-					</div>
-				</div>
-
-
-
-			</section>
-			<section class="section appear-animation" data-appear-animation="fadeInUpShorter"
-				data-appear-animation-delay="200">
-				<div class="container">
-					<div class="row pt-3">
-						<div class="col-12 text-center mb-3">
-							<img src="img/dots.png" width="50px" class="text-center img-fluid">
-						</div>
-						<div class="col-lg-6">
-							<div class="testimonial-author">
-								<img src="img/generic/BetaDelta.png" class="img-fluid " alt="">
-							</div>
-
-						</div>
-						<div class="col-lg-6 ">
-							<div class="row">
-								<div class="col-12">
-									<h2 class="p-0 m-0 text-center text-md-start">The Habitat Beta & Delta</h2>
-									<h2 class="p-0 m-0 text-center text-md-start">Townhouses</h2>
-									<hr>
-									<h4 class="font-weight-bold">SOLD OUT</h4>
-									<p class="text-dark">Living in the heart of the city is good for your heart with
-										our
-										spacious visually stunning townhouses of 3 and 4
-										bedrooms.</p>
-
-									<p class="text-dark">All units have a private backyard garden and 2 parking
-										spaces. There is access to communal garden spaces as
-										well as a public park. These units are currently under
-										construction.</p>
-
-
-								</div>
-								<div class="col-12 text-center mt-3 pb-5">
-									<a href="TheHabitatBetaDelta.html"
-										class="btn btn-dark font-weight-semibold rounded-0 text-2 btn-px-5 btn-py-2 custom-btn-style-1">CLICK
-										FOR
-										MORE</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
 			</section>
 
 
@@ -383,14 +294,13 @@
 							<div class="header-row flex-row text-center">
 								<div class="header-logo">
 									<a href="index.html">
-										<img alt="Porto" width="60" class="invertImage "
-											src="img/logos/Sarona-City-Only-Logo-White.png">
+										<img alt="Porto" width="300" class="" src="img/logos/Flamingo Logo.png">
 									</a>
 								</div>
 							</div>
-							<h1 class="text-uppercase Anton">Sarona city mall</h1>
+							<h1 class="text-uppercase Anton">Flamingo Mall</h1>
 
-							<p class="text-dark fs-6">The first shopping centre to sit within the Estate, Sarona City
+							<!-- <p class="text-dark fs-6">The first shopping centre to sit within the Estate, Sarona City
 								Mall complements the unique lifestyle living with a tenant mix of 39 shops.</p>
 
 							<p class="text-dark fs-6">This stunning shopping centre consists of 7000 square meters that
@@ -399,7 +309,7 @@
 								enjoy fine dining, and diverse shopping options for fashion, hair & beauty,
 								pharmaceuticals, groceries, and stationery, with a medical centre located within the
 								Mall, and a laundromat, with access to free parking.
-							</p>
+							</p> -->
 						</div>
 					</div>
 				</div>
@@ -410,13 +320,9 @@
 						<div class="col-12 col-lg-8 text-center">
 							<div class="align-items-center d-flexh-100">
 								<div class="mt-5 mb-5 XMYekan" style="position: relative;">
-									<p class="h4 mb-1 pb-1 text-dark">Sarona City, a city within the city</h3>
+									<p class="h4 mb-1 pb-1 text-dark">Eco City, Where Opulence & Nature Embrace</h3>
 										<hr class="" style="width: 20%;margin: auto;">
-									<p class="mt-1 pt-1 text-dark">This upscale development with immaculate design
-										coupled
-										with
-										first-class amenities.
-									</p>
+
 								</div>
 							</div>
 						</div>
@@ -447,29 +353,29 @@
 					<div class="row justify-content-center pb-3 mb-2 appear-animation"
 						data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
 						<div class="col-sm-9 col-md-8 col-lg-3 mb-4 mb-lg-0">
-							<div class="card border-0 rounded-0" style="background-color: #f6f6f6;">
-								<img class="card-img-top border-radius-0" src="img/team/pinky.png" alt="" />
+							<div class="card border-0 rounded-0">
+								<img class="card-img-top border-radius-0" src="img/team/Victor.png" alt="" />
 								<div class="card-body text-center">
-									<h4 class="card-title font-weight-extra-bold text-color-dark text-5 mb-1">Pinky G.
-										Gobuamang</h4>
-									<h3 class="text-color-default text-3-5 ls-0 font-weight-normal mb-2 pb-1">Head of
-										Operations</h3>
+									<h4 class="card-title font-weight-extra-bold text-color-dark text-5 mb-1">Victor
+										Kobe</h4>
+									<h3 class="text-color-default text-3-5 ls-0 font-weight-normal mb-2 pb-1">Sales and
+										Marketing Manager</h3>
 									<hr>
 									<p class="card-text font-weight-light mb-0"><span class="fa fa-phone"></span>
-										<a href="tel:+26771201155"> +267 71201155</a>
+										<a href="tel:+26771905441"> +267 7190 5441</a>
 									</p>
 									<p class="card-text  font-weight-light"><span class="fa fa-phone"></span>
 										<a href="tel:+2673181436  ">
 											+267 318 1436</a>
 									</p>
 									<p class="card-text font-weight-light"><span class="fa fa-envelope"></span><a
-											href="mailto:pinkyg@ricdevelopment.co.bw?Subject=Sarona City Website">
-											pinkyg@ricdevelopment.co.bw</a></p>
+											href="mailto: victork@ricdevelopment.co.bw?Subject=Subject=RIC Botswanna Website">
+											victork@ricdevelopment.co.bw</a></p>
 								</div>
 							</div>
 						</div>
 						<div class="col-sm-9 col-md-8 col-lg-3 mb-4 mb-lg-0">
-							<div class="card border-0 rounded-0" style="background-color: #f6f6f6;">
+							<div class="card border-0 rounded-0">
 								<img class="card-img-top border-radius-0" src="img/team/Lefa Mase.png" alt="" />
 								<div class="card-body text-center">
 									<h4 class="card-title font-weight-extra-bold text-color-dark text-5 mb-1">Lefa Mase
@@ -478,20 +384,62 @@
 										Officer</h3>
 									<hr>
 									<p class="card-text font-weight-light mb-0"><span class="fa fa-phone"></span>
-										<a href="tel:+26771470909"> +267 71470909 </a>
+										<a href="tel:+26771470909"> +267 7147 0909 </a>
 									</p>
 									<p class="card-text  font-weight-light"><span class="fa fa-phone"></span>
 										<a href="tel:+2673181436  ">
 											+267 318 1436</a>
 									</p>
 									<p class="card-text font-weight-light"><span class="fa fa-envelope"></span><a
-											href="mailto:lefam@ricdevelopment.co.bw?Subject=Sarona City Website">
+											href="mailto:lefam@ricdevelopment.co.bw?Subject=Subject=RIC Botswanna Website">
 											lefam@ricdevelopment.co.bw</a></p>
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-9 col-md-8 col-lg-3">
-							<div class="card border-0 rounded-0" style="background-color: #f6f6f6;">
+						<div class="col-sm-9 col-md-8 col-lg-3 mb-4 mb-lg-0">
+							<div class="card border-0 rounded-0">
+								<img class="card-img-top border-radius-0" src="img/team/Dithupa Dithupa.jpg" alt="" />
+								<div class="card-body text-center">
+									<h4 class="card-title font-weight-extra-bold text-color-dark text-5 mb-1">Dithupa Dithupa
+									</h4>
+									<h3 class="text-color-default text-3-5 ls-0 font-weight-normal mb-2 pb-1">Admin Clerk</h3>
+									<hr>
+									<p class="card-text font-weight-light mb-0"><span class="fa fa-phone"></span>
+										<a href="tel:+26771470909"> +267 7147 0909 </a>
+									</p>
+									<p class="card-text  font-weight-light"><span class="fa fa-phone"></span>
+										<a href="tel:+2673181436  ">
+											+267 318 1436</a>
+									</p>
+									<p class="card-text font-weight-light"><span class="fa fa-envelope"></span><a
+											href="mailto:ldithupad@ricdevelopment.co.bw?Subject=Subject=RIC Botswanna Website">
+											dithupad@ricdevelopment.co.bw</a></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-9 col-md-8 col-lg-3 mb-4 mb-lg-0">
+							<div class="card border-0 rounded-0">
+								<img class="card-img-top border-radius-0" src="img/team/Thuto Makgasane.jpg" alt="" />
+								<div class="card-body text-center">
+									<h4 class="card-title font-weight-extra-bold text-color-dark text-5 mb-1">Thuto Makgasane
+									</h4>
+									<h3 class="text-color-default text-3-5 ls-0 font-weight-normal mb-2 pb-1">Admin Clerk</h3>
+									<hr>
+									<p class="card-text font-weight-light mb-0"><span class="fa fa-phone"></span>
+										<a href="tel:+26771470909"> +267 7147 0909 </a>
+									</p>
+									<p class="card-text  font-weight-light"><span class="fa fa-phone"></span>
+										<a href="tel:+2673181436  ">
+											+267 318 1436</a>
+									</p>
+									<p class="card-text font-weight-light"><span class="fa fa-envelope"></span><a
+											href="mailto:thutom@ricdevelopment.co.bw?Subject=Subject=RIC Botswanna Website">
+											thutom@ricdevelopment.co.bw</a></p>
+								</div>
+							</div>
+						</div>
+						<!-- <div class="col-sm-9 col-md-8 col-lg-3">
+							<div class="card border-0 rounded-0">
 								<img class="card-img-top border-radius-0" src="img/team/Loeto Lennwe.png" alt="" />
 								<div class="card-body text-center">
 									<h4 class="card-title font-weight-extra-bold text-color-dark text-5 mb-1">Loeto
@@ -501,41 +449,19 @@
 									<hr>
 									<p class="card-text  font-weight-light mb-0"><span class="fa fa-phone"></span>
 										<a href="tel:+26771470909  ">
-											+267 71470909</a>
+											+267 7147 0909</a>
 									</p>
 									<p class="card-text  font-weight-light"><span class="fa fa-phone"></span>
 										<a href="tel:+2673181436  ">
 											+267 318 1436</a>
 									</p>
 									<p class="card-text font-weight-light"><span class="fa fa-envelope"></span>
-										<a href="mailto:loetol@ricdevelopment.co.bw?Subject=Sarona City Website">
+										<a
+											href="mailto:loetol@ricdevelopment.co.bw?Subject=Subject=RIC Botswanna Website">
 											loetol@ricdevelopment.co.bw</a>
 									</p>
 								</div>
-							</div>
-						</div>
-						<div class="col-sm-9 col-md-8 col-lg-3">
-							<div class="card border-0 rounded-0" style="background-color: #f6f6f6;">
-								<img class="card-img-top border-radius-0" src="img/team/Mo Mo.png" alt="" />
-								<div class="card-body text-center">
-									<h4 class="card-title font-weight-extra-bold text-color-dark text-5 mb-1">Mo Mo</h4>
-									<h3 class="text-color-default text-3-5 ls-0 font-weight-normal mb-2 pb-1">Marketing
-										Officer</h3>
-									<hr>
-									<p class="card-text  font-weight-light mb-0"><span class="fa fa-phone"></span>
-										<a href="tel:+26775681635  ">
-											+267 75681635</a>
-									</p>
-									<p class="card-text  font-weight-light"><span class="fa fa-phone"></span>
-										<a href="tel:+2673181436  ">
-											+267 318 1436</a>
-									</p>
-									<p class="card-text font-weight-light"><span class="fa fa-envelope"></span>
-										<a href="mailto:momoh@ricdevelopment.co.bw?Subject=Sarona City Website">
-											momoh@ricdevelopment.co.bw</a>
-									</p>
-								</div>
-							</div>
+							</div> -->
 						</div>
 					</div>
 
@@ -545,8 +471,9 @@
 				<div class="container-fluid mt-1" style="height: 500px; padding: 0;">
 
 					<div class="google-maps" style="height: 500px; padding: 0;">
+
 						<iframe
-							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5128.8161737599685!2d25.949209758825504!3d-24.6132387548266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ebb5d0db569dfd3%3A0x35dd93ad84347aaf!2sSarona%20City%20Mall!5e0!3m2!1sen!2sza!4v1679859661878!5m2!1sen!2sza"
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2758.522084112508!2d25.878414599999992!3d-24.701655299999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ebb5b000da95085%3A0x29de6b94e6740a0c!2sRIC%20Development%20Botswana%20Sale%20Office%20-%20Eco%20City!5e0!3m2!1sen!2sza!4v1726219936430!5m2!1sen!2sza"
 							height="500" style="border:0;" allowfullscreen="" loading="lazy"
 							referrerpolicy="no-referrer-when-downgrade"></iframe>
 					</div>
@@ -601,6 +528,13 @@
 	<!-- Theme Initialization Files -->
 	<script src="js/theme.init.js"></script>
 
+	<script>
+		
+document.addEventListener("DOMContentLoaded", function() {
+            var pollModal = new bootstrap.Modal(document.getElementById('pollModal'));
+            pollModal.show(); // Show the modal when the page loads
+        });
+	</script>
 </body>
 
 </html>

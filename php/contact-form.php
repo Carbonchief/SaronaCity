@@ -7,7 +7,7 @@ echo "<p>Please complete the captcha</p>";
 //Recaptcha validation
 $url = 'https://www.google.com/recaptcha/api/siteverify';
 $data = array(
-    'secret' => '6LeXATglAAAAAKUCEAxF8rfJn7ZUTx__y0M9MM7O',
+    'secret' => '6Lf8QEIqAAAAAKW3nomTe91b_LCff9lCHKTS4t4j',
     'response' => $_POST["captcha"]
 );
 $options = array(
@@ -34,8 +34,8 @@ if ($captcha_success->success == false) {
         exit;
     }
 
-    $email_from = 'web@saronacity.co.bw'; //<== update the email address
-    $email_subject = "New Sarona City Message";
+    $email_from = 'web@ecocity.co.bw'; //<== update the email address
+    $email_subject = "New Eco City Message";
     $email_body = "You have received a new message from:\n $firstname \n\n Contact Details:\n $visitor_email \n\n Message:\n $message";
 
     $to = "vanderwaltluan@gmail.com"; //<== update the email address
