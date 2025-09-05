@@ -642,6 +642,171 @@
 		<div id="footer-placeholder" class="hideFixedTitle">
 		</div>
 
+		<!-- Award Modal -->
+		<div id="award-modal" class="award-modal-overlay" hidden>
+			<div class="award-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="award-heading">
+				<button type="button" class="award-modal-close" aria-label="Close">&times;</button>
+				<div class="award-modal-content">
+					<div class="award-modal-img-wrap">
+						<picture>
+							<source srcset="img/Award-Small.jpg" media="(max-width: 768px)">
+							<img src="img/Award.jpg"
+								alt="RIC Development Botswana — First Prize, Real Estate – Services, Botswana Consumer Fair 2025"
+								class="award-modal-img">
+						</picture>
+					</div>
+					<div class="award-modal-text">
+						<h2 id="award-heading" tabindex="-1">RIC Development Botswana Shines at the Botswana Consumer
+							Fair 2025</h2>
+						<p>RIC Development Botswana (Pty) Ltd is honoured to have been awarded First Prize in the Real
+							Estate – Services Category at the just ended Botswana Consumer Fair 2025.</p>
+						<p>This achievement reflects our unwavering dedication to delivering exceptional real estate
+							solutions that truly make a difference in the lives of our clients and the community at
+							large.</p>
+						<p>We celebrate this milestone with immense gratitude to our hardworking team whose passion and
+							commitment brought this recognition home. We also extend our appreciation to our clients,
+							partners, and stakeholders for trusting us and walking this journey with us.</p>
+						<p>This award inspires us to continue raising the bar in the real estate sector, innovating, and
+							providing top notch services that meet the evolving needs of Botswana and beyond.</p>
+						<div class="award-modal-actions">
+							<button type="button" class="award-modal-close-btn">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<style>
+			.award-modal-overlay {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				padding: 1rem;
+				background: rgba(0, 0, 0, 0.6);
+				backdrop-filter: blur(2px);
+				opacity: 0;
+				visibility: hidden;
+				transition: opacity .3s ease;
+				z-index: 10000;
+			}
+
+			.award-modal-overlay.show {
+				opacity: 1;
+				visibility: visible;
+			}
+
+			.award-modal-dialog {
+				background: #fff;
+				border-radius: 10px;
+				box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+				width: 100%;
+				max-width: 100%;
+				position: relative;
+				overflow-y: auto;
+				overflow-x: hidden;
+				transform: scale(0.9);
+				opacity: 0;
+				transition: transform .3s ease, opacity .3s ease;
+				max-height: 90vh;
+				display: flex;
+				flex-direction: column;
+			}
+
+			.award-modal-overlay.show .award-modal-dialog {
+				transform: scale(1);
+				opacity: 1;
+			}
+
+			.award-modal-content {
+				flex: 1 1 auto;
+				display: flex;
+				flex-direction: column;
+			}
+
+			.award-modal-img-wrap {
+				width: 100%;
+				flex-shrink: 0;
+			}
+
+			.award-modal-img {
+				width: 100%;
+				height: auto;
+				display: block;
+				max-height: 40vh;
+				object-fit: contain;
+			}
+
+			.award-modal-text {
+				flex: 1 1 auto;
+				padding: 1rem 1.5rem;
+				font-size: 1rem;
+				line-height: 1.5;
+			}
+
+			.award-modal-text h2 {
+				font-size: 1.5rem;
+				margin: 0 0 1rem 0;
+			}
+
+			.award-modal-actions {
+				text-align: right;
+				margin-top: 1.5rem;
+			}
+
+			.award-modal-close {
+				position: absolute;
+				top: .5rem;
+				right: .5rem;
+				background: none;
+				border: none;
+				font-size: 1.5rem;
+				line-height: 1;
+				cursor: pointer;
+			}
+
+			.award-modal-close-btn {
+				padding: .5rem 1rem;
+				cursor: pointer;
+			}
+
+			body.modal-open {
+				overflow: hidden;
+			}
+
+			@media (min-width: 1024px) {
+				.award-modal-dialog {
+					width: 70%;
+					max-width: 70%;
+				}
+
+				.award-modal-content {
+					flex-direction: row;
+				}
+
+				.award-modal-img-wrap {
+					width: 50%;
+					height: 100%;
+				}
+
+				.award-modal-img {
+					height: 100%;
+					object-fit: cover;
+					border-radius: 10px 0 0 10px;
+					max-height: none;
+				}
+
+				.award-modal-text {
+					width: 50%;
+					padding: 1.5rem;
+				}
+			}
+		</style>
+
 	</div>
 
 	<!-- Vendor -->
@@ -677,9 +842,65 @@
 	<script src="js/theme.init.js"></script>
 
 	<script>
-		document.addEventListener("DOMContentLoaded", function () {
-			var pollModal = new bootstrap.Modal(document.getElementById('pollModal'));
-			pollModal.show(); // Show the modal when the page loads
+		$(document).ready(function () {
+			var $overlay = $('#award-modal');
+			var $dialog = $overlay.find('.award-modal-dialog');
+			var $closeButtons = $overlay.find('.award-modal-close, .award-modal-close-btn');
+			var lastFocus;
+
+			function openModal() {
+				lastFocus = $(document.activeElement);
+				$overlay.removeAttr('hidden');
+				setTimeout(function () {
+					$overlay.addClass('show');
+				}, 10);
+				$('body').addClass('modal-open');
+				$('#award-heading').focus();
+				trapFocus();
+			}
+
+			function closeModal() {
+				$overlay.removeClass('show');
+				$('body').removeClass('modal-open');
+				setTimeout(function () {
+					$overlay.attr('hidden', true);
+					if (lastFocus && lastFocus.length) {
+						lastFocus.focus();
+					}
+				}, 300);
+			}
+
+			function trapFocus() {
+				var $focusable = $dialog.find('a, button, textarea, input, select, [tabindex]:not([tabindex="-1"])');
+				var $first = $focusable.first();
+				var $last = $focusable.last();
+
+				$dialog.on('keydown', function (e) {
+					if (e.key === 'Tab') {
+						if (e.shiftKey) {
+							if (document.activeElement === $first[0]) {
+								e.preventDefault();
+								$last.focus();
+							}
+						} else {
+							if (document.activeElement === $last[0]) {
+								e.preventDefault();
+								$first.focus();
+							}
+						}
+					}
+				});
+			}
+
+			openModal();
+
+			$closeButtons.on('click', closeModal);
+			$overlay.on('click', function (e) {
+				if (e.target === this) closeModal();
+			});
+			$(document).on('keydown', function (e) {
+				if (e.key === 'Escape') closeModal();
+			});
 		});
 	</script>
 
